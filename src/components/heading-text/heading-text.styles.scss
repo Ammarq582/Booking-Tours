@@ -1,0 +1,15 @@
+.heading-text-container {
+    margin-bottom: 3rem;
+    width: 100%;
+    h3 {
+        text-transform: uppercase;
+        color: rgb(var(--color-grey-dark));
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        color: rgb(var(--color-grey-dark));
+        line-height: 1.6;
+        font-size: 1.6rem;
+    }
+}

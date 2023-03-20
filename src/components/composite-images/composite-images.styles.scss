@@ -1,0 +1,44 @@
+.composite-images-container {
+    position: relative;
+    pointer-events: none;
+
+
+    &__image {
+        position: absolute;
+        border-radius: 3px;
+        box-shadow: 0 15px 25px rgba(0,0,0, .3);
+        transition: all .2s;
+        outline-offset: 2rem;
+        pointer-events: auto;
+        
+
+        &.img1 {
+            top: 0;
+            left: 0;
+        }
+
+        &.img2 {
+            top: 4rem;
+            right: 0;
+        }
+
+        &.img3 {
+            top: 12rem;
+            left: 11rem;
+        }
+
+        &:hover {
+            transform: scale(1.05) translateY(-5px);
+            z-index: 1;
+            outline: 1.5rem solid rgb(var(--color-primary));
+        }
+    }
+
+    &:hover &__image:not(:hover) {
+        transform: scale(.95);
+    }
+
+}
+
+
+    

@@ -1,0 +1,19 @@
+.section-about-container {
+    padding: 15rem 0;
+    margin-top: -10rem;
+    background-image: linear-gradient(
+        to right,
+        rgba(var(--color-primary-light), .8),
+        rgba(var(--color-primary-dark), .8),
+        ),
+        url('../../assets/img/nat-4.jpg');
+    // transform: skewY(-8deg);
+    background-size: cover;
+    transform: skewY(-7deg);
+
+    &__content {
+        transform: skewY(7deg);
+    }
+
+}
+

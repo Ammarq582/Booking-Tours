@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    width: var(--grid-width);
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    & > * {
+        flex: 1;
+
+        &:not(:last-child) {
+            margin-right: 6rem;
+        }
+    }
+}

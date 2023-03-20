@@ -1,0 +1,47 @@
+.form-input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5rem;
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 1.5rem;
+        color: inherit;
+        font-size: 1.6rem;
+        
+        border-radius: 3px;
+        border-bottom: 3px solid transparent;
+        transition: all .3s ease-out;
+
+        &::-webkit-input-placeholder {
+            font-size: 1.5rem;
+        }
+
+        &:focus {
+            border-bottom: 3px solid rgb(var(--color-secondary-dark));
+        }
+
+        &.valid {
+            border-bottom: 3px solid rgb(var(--color-primary));
+        }
+    }
+
+    label {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+        opacity: 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all .3s ease-out;
+        
+        &.visible {
+            opacity: 1;
+            top: 6rem;
+        }
+    }
+
+}

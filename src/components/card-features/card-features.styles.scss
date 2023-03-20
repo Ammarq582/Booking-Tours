@@ -1,0 +1,32 @@
+.card-features-container {
+    background-color: rgb(var(--color-white));
+    display: flex;
+    padding: 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(var(--color-black), .2);
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+    opacity: .8;
+
+    &:hover {
+        transform: 
+            translateY(-15px)
+            scale(1.02);
+        box-shadow:
+            0 15px 10px rgba(var(--color-black), .2);
+    }
+
+    &__icon {
+        font-size: 6rem;
+        color: rgb(var(--color-primary));
+        margin: 3rem 0;
+    }
+
+    &__text {
+        text-align: center;
+        color: rgb(var(--color-grey-dark));
+        line-height: 1.5;
+        
+    }
+}

@@ -1,0 +1,28 @@
+.section-reviews-container {
+    padding: 20rem 0;
+    background-image: linear-gradient(rgba(var(--color-white), .85), rgba(var(--color-white), .85));
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    h2 {
+        margin-bottom: 8rem;
+    }
+
+    .reviews-container {
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+    }
+}

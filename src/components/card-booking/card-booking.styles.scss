@@ -1,0 +1,27 @@
+.card-booking-container {
+    position: relative;
+    perspective: 150rem;
+    
+
+    .back, .front {
+        transition: .7s all;
+        backface-visibility: hidden;
+    }
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg);
+    }
+
+    &:hover {
+        & .back {
+            transform: rotateY(0);
+        }
+
+        & .front {
+            transform: rotateY(-180deg);
+        }
+    }
+}

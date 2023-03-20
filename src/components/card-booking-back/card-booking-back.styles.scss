@@ -1,0 +1,55 @@
+.card-booking-back-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(var(--color-black), .3);
+
+    .booking-details {
+
+        .price-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 8rem;
+            text-transform: uppercase;
+            color: rgb(var(--color-white));
+            
+            span {
+                margin-bottom: 2rem;
+                font-size: 1.4rem;
+            }
+    
+            .price {
+                font-size: 6rem;
+                font-weight: lighter;
+            }
+        }
+
+    }
+
+    &.green {
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(var(--color-primary-light)),
+            rgb(var(--color-primary-dark)),
+        );
+    }
+    &.yellow {
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(var(--color-secondary-light)),
+            rgb(var(--color-secondary-dark)),
+        );
+    }
+    &.blue {
+        background-image: linear-gradient(
+            to right bottom,
+            rgb(var(--color-tertiary-light)),
+            rgb(var(--color-tertiary-dark)),
+        );
+    }
+}
