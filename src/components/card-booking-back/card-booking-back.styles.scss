@@ -6,7 +6,12 @@
     align-items: center;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(var(--color-black), .3);
+
+    @media only screen and (max-width: 900px) {
+        height: 225px;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+    
 
     .booking-details {
 
@@ -17,15 +22,26 @@
             margin-bottom: 8rem;
             text-transform: uppercase;
             color: rgb(var(--color-white));
+
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 3rem;
+            }
             
             span {
                 margin-bottom: 2rem;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
+
+                @media only screen and (max-width: 900px) {
+                    margin-bottom: 1rem;
+                }
             }
     
             .price {
                 font-size: 6rem;
                 font-weight: lighter;
+                @media only screen and (max-width: 900px) {
+                    font-size: 4rem;
+                }
             }
         }
 

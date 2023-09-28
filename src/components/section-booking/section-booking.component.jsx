@@ -3,6 +3,9 @@ import FlexContainer from '../flex-container/flex-container.component'
 import HeadingSecondary from '../heading-secondary/heading-secondary.component'
 import './section-booking.styles.scss'
 import ButtonPrimary, { BUTTON_TYPES } from '../button-primary/button-primary.component'
+import Popup from '../popup/popup.component'
+import { useContext} from 'react'
+import { popupContext } from '../../contexts/popup.context'
 
 const cardDataArray = [
     {
@@ -34,6 +37,7 @@ const cardDataArray = [
 ]
 
 const SectionBooking = () => {
+    const {showPopup} = useContext(popupContext);
     return(
         <div className="section-booking-container">
             <HeadingSecondary>
@@ -49,6 +53,13 @@ const SectionBooking = () => {
                 </FlexContainer>
             </div>
             <ButtonPrimary buttonType={BUTTON_TYPES.green}>Discover all tours</ButtonPrimary>
+            {
+                showPopup
+                ?
+                <Popup/>
+                :
+                null
+            }
         </div>
     )
 }

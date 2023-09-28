@@ -1,14 +1,40 @@
 .review-container {
     max-width: 75%;
     margin: 0 auto;
+    margin-bottom: 6rem;
     padding: 5rem;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.2);
     transform: skewX(-12deg);
 
+    @media only screen and (max-width: 900px) {
+        transform: skewX(0);
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        max-width: 92%;
+    }
+
     &__content {
         transform: skewX(12deg);
         display: flex;
+
+        @media only screen and (max-width: 900px) {
+            transform: skewX(0);
+        }
+
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
 
         .image-container {
             height: 15rem;
@@ -20,7 +46,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            shape-outside: circle(50% at 50% 50%);
+
+            @media only screen and (max-width: 600px) {
+                margin-right: 0;
+                margin-bottom: 2.5rem;
+                height: 15rem;
+                width: 15rem;
+            }
 
             .name {
                 position: absolute;

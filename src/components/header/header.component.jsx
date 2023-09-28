@@ -1,6 +1,7 @@
 import './header.styles.scss';
 import Logo from '../../assets/img/logo-white.png';
 import ButtonPrimary from '../button-primary/button-primary.component';
+import FlexContainer from '../flex-container/flex-container.component';
 
 const Header = () => {
 

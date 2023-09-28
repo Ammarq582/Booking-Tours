@@ -33,9 +33,7 @@ const SectionReviews = () => {
             <div className="reviews-container">
                 {
                     reviewDataArray.map(reviewData => (
-                        <FlexContainer key={reviewData.id}>
                             <Review reviewData={reviewData}/>
-                        </FlexContainer>
                     ))
                 }
             </div>

@@ -12,7 +12,7 @@ const Review = ({reviewData}) => {
     <div className="review-container">
         <div className="review-container__content">
             <div className="image-container">
-                <fig src={imageUrl} alt={name} />
+                <img src={imageUrl} alt={name} />
                 <div className="name">
                     <span>{firstName}</span>
                     <span>{lastName}</span>

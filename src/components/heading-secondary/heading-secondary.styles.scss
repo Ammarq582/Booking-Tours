@@ -7,11 +7,17 @@
     background-clip: text;
     background-position: bottom;
     color: transparent;
+    text-align: center;
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: 2px;
     transition: all .2s;
+    display: inline-block;
+
+    @media only screen and (max-width: 600px) {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);

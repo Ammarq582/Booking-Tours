@@ -5,9 +5,9 @@ export const BUTTON_TYPES = {
     green: 'green'
 }
 
-const ButtonPrimary = ({children, buttonType = BUTTON_TYPES.base}) => {
+const ButtonPrimary = ({children, buttonType = BUTTON_TYPES.base, ...props}) => {
     return(
-        <button className={`button-primary ${buttonType}`}>
+        <button className={`button-primary ${buttonType}`} {...props}>
             {children}
         </button>
     )

@@ -5,13 +5,19 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
+import { PopupProvider } from './contexts/popup.context';
+import { NavProvider } from './contexts/nav.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
-    </BrowserRouter> 
+    <NavProvider>
+      <PopupProvider>
+        <App />
+      </PopupProvider>
+    </NavProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

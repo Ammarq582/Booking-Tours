@@ -4,13 +4,20 @@
 
 
     &__image {
+        width: 50%;
         position: absolute;
         border-radius: 3px;
         box-shadow: 0 15px 25px rgba(0,0,0, .3);
         transition: all .2s;
         outline-offset: 2rem;
         pointer-events: auto;
+        transform: scale(1.04);
         
+        @media only screen and (max-width: 900px) {
+            width: 33.3333333%;
+            position: static;
+            pointer-events: none;
+        }
 
         &.img1 {
             top: 0;
@@ -28,14 +35,14 @@
         }
 
         &:hover {
-            transform: scale(1.05) translateY(-5px);
+            transform: scale(1.1) translateY(-5px);
             z-index: 1;
             outline: 1.5rem solid rgb(var(--color-primary));
         }
     }
 
     &:hover &__image:not(:hover) {
-        transform: scale(.95);
+        transform: scale(1);
     }
 
 }
