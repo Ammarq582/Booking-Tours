@@ -1,7 +1,7 @@
 import './card-booking-front.styles.scss'
 
 const CardBookingFront = ({cardData, className}) => {
-    const {imgUrl, title, list, background} = cardData;
+    const {title, list, background} = cardData;
 
     return(
         <div className={`card-booking-front-container ${className}`}>

@@ -4,6 +4,7 @@ import logo2x from '../../assets/img/logo-green-2x.png';
 import logoSmall1x from '../../assets/img/logo-green-small-1x.png';
 import logoSmall2x from '../../assets/img/logo-green-small-2x.png';
 import FlexContainer from '../flex-container/flex-container.component';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,15 +21,15 @@ const Footer = () => {
             <div className="footer__content">
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                        <li class="footer__item"><Link to="#" class="footer__link">Company</Link></li>
+                        <li class="footer__item"><Link to="#" class="footer__link">Contact us</Link></li>
+                        <li class="footer__item"><Link to="#" class="footer__link">Carrers</Link></li>
+                        <li class="footer__item"><Link to="#" class="footer__link">Privacy policy</Link></li>
+                        <li class="footer__item"><Link to="#" class="footer__link">Terms</Link></li>
                     </ul>
                 </div>
                 <p class="footer__copyright">
-                    Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                    Built by <Link to="#" class="footer__link">Jonas Schmedtmann</Link> for his online course <Link to="#" class="footer__link">Advanced CSS and Sass</Link>.
                     Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
                     and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
                     Schmedtmann, is of course highly appreciated!

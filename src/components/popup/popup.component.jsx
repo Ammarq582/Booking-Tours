@@ -16,8 +16,8 @@ const Popup = () => {
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src={nat8} alt="Tour photo" class="popup__img"/>
-                    <img src={nat9} alt="Tour photo" class="popup__img"/>
+                    <img src={nat8} alt="nat 8" class="popup__img"/>
+                    <img src={nat9} alt="nat 9" class="popup__img"/>
                 </div>
                 <div class="popup__right">
                     <Link to="#section-tours" className="popup__close" onClick={setShowPopupHandler}>&times;</Link>

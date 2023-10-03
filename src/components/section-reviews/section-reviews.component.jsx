@@ -1,6 +1,5 @@
 import './section-reviews.styles.scss'
 import HeadingSecondary from '../heading-secondary/heading-secondary.component'
-import FlexContainer from '../flex-container/flex-container.component'
 import Review from '../review/review.component'
 import videoUrl from '../../assets/img/video.mp4'
 import nat8 from '../../assets/img/nat-8.jpg'

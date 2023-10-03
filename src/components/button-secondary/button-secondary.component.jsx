@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import './button-secondary.styles.scss';
 
 const ButtonSecondary = ({children}) => {
     return(
-        <a href="#" className="button-secondary">
+        <Link to='#' className="button-secondary">
             {children}
-        </a>
+        </Link>
     )
 }
 

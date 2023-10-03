@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './form-input.styles.scss'
 
 const FormInput = ({label, ...props}) => {

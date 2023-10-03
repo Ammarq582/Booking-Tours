@@ -1,6 +1,4 @@
 import './review.styles.scss'
-
-import nat2 from '../../assets/img/nat-2.jpg'
 import HeadingText from '../heading-text/heading-text.component';
 
 const Review = ({reviewData}) => {
