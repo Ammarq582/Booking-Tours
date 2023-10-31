@@ -8,7 +8,7 @@ const NavigationList = () => {
         <ul className={`navigation-list ${isNavOpen ? "open" : null}`}>
             <li className="navigation-list__item">
                 <span>01</span>
-                About Natours
+                About Booking-Tours
             </li>
             <li className="navigation-list__item">
                 <span>02</span>

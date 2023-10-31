@@ -29,10 +29,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <p class="footer__copyright">
-                    Built by <Link to="#" class="footer__link">Jonas Schmedtmann</Link> for his online course <Link to="#" class="footer__link">Advanced CSS and Sass</Link>.
-                    Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
-                    and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
-                    Schmedtmann, is of course highly appreciated!
+                    Built by <Link to="#" class="footer__link">Ammar Qureshi</Link> for his <Link to="https://ammarqureshi.netlify.app/" class="footer__link">Portfolio</Link>.
+                    Copyright &copy; by Ammar Qureshi.
                 </p>
             </div>            
             </FlexContainer>
