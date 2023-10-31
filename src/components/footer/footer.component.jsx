@@ -29,7 +29,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <p class="footer__copyright">
-                    Built by <Link to="#" class="footer__link">Ammar Qureshi</Link> for his <Link to="./https://ammarqureshi.netlify.app/" class="footer__link">Portfolio</Link>.
+                    Built by <Link to="#" class="footer__link">Ammar Qureshi</Link> for his <Link to='https://ammarqureshi.netlify.app/' class="footer__link">Portfolio</Link>.
                     Copyright &copy; by Ammar Qureshi.
                 </p>
             </div>            
