@@ -6,7 +6,7 @@ import logoSmall2x from '../../assets/img/logo-green-small-2x.png';
 import FlexContainer from '../flex-container/flex-container.component';
 import { Link } from 'react-router-dom';
 
-
+const portfolioLink = 'https://ammarqureshi.netlify.app/';
 
 const Footer = () => {
     return(
@@ -29,7 +29,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <p class="footer__copyright">
-                    Built by <Link to="#" class="footer__link">Ammar Qureshi</Link> for his <Link target='_blank' to='https://ammarqureshi.netlify.app/' class="footer__link">Portfolio</Link>.
+                    Built by <Link to="#" class="footer__link">Ammar Qureshi</Link> for his <a href={portfolioLink} class="footer__link">Portfolio</a>.
                     Copyright &copy; by Ammar Qureshi.
                 </p>
             </div>            
